@@ -57,16 +57,9 @@ def parse_file(file_name, storage):
             )
 
             # Set next offset
-            offset = offset + 8 + block_size  # set to beg of next block
-
+            offset = offset + 8 + block_siz
             f.seek(offset)
 
-            # print("Block_height: {}, Next_Offset: {}".format(block_height, offset))
-            # print(
-            #     "Version: {}, Prev_hash: {}, Merkle_hash: {}, time: {}, n_bits: {}, nonce: {}".format(
-            #         version, prev_hash, merkle_hash, time, n_bits, nonce
-            #     )
-            # )
             block_height += 1
 
 

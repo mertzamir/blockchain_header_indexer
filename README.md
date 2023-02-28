@@ -12,7 +12,7 @@ flask run
 ```
 
 Then query the server from another terminal by providing the block height in the 
-query parameters. Example:
+query parameters. (if not provided, block=0 is used by default) Example:
 ```
 curl "http://127.0.0.1:5000/?block=8"
 ```
